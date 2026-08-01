@@ -1,4 +1,8 @@
-# libft (Library 42)
+This project has been created as part of the 42 curriculum by muhabin3
 
-Description Create my own library: a collection of functions
-that will be a useful tool for my curriculum.
+Description
+
+Instructions
+
+Resources
+
