@@ -6,18 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:43:03 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/08/01 16:49:53 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/08/01 19:45:35 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	c = c - 'A' + 'a';
+	if(c >= 'A' && c <= 'Z')
+		return (c - 'A' + 'a');
 	return (c);
 }
 
 /*#include <stdio.h>
 int	main(void)
 {
-	printf("change char: %c", ft_tolower('A'));
+	printf("change char: %c", ft_tolower('a'));
 }*/
