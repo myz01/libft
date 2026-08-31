@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 16:39:55 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/07/27 18:36:51 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/08/31 19:18:21 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(void)
 	int	result;
 	char	str;
 
-	str = '1';
+	str = ' ';
 	result = ft_isalpha(str);
 	printf("%d", result);
-}*/
+} */

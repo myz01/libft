@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/06 10:41:08 by omyzx             #+#    #+#             */
-/*   Updated: 2026/08/31 19:18:16 by muhabin3         ###   ########.fr       */
+/*   Created: 2026/07/29 15:29:50 by muhabin3          #+#    #+#             */
+/*   Updated: 2026/08/31 11:12:55 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+int	ft_strlen(char *str)
 {
-	
+	int	i;
+
+	i = 0;
+	while (str[i] != 0)
+	{
+		i++;
+	}
+	return (i);
 }
 
-int	main(void)
+#include <stdio.h>
+int main(void)
 {
-
+	printf( "length: %d", ft_strlen("hi"));
 }

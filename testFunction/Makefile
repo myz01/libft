@@ -6,38 +6,24 @@
 #    By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/28 23:41:04 by muhabin3          #+#    #+#              #
-#    Updated: 2026/08/31 23:38:47 by muhabin3         ###   ########.fr        #
+#    Updated: 2026/08/31 11:45:07 by muhabin3         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+OBJ = $(SRC:.c=.out)
 SRC = ft_strlen.c ft_isalpha.c
-OBJ = $(SRC:.c=.o)
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-#as a starting point
-all: $(NAME)
+all:$(OBJ)
 
-#it will compile and create filename of *.o
-%.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.out : %.c
+	$(CC) $(CFLAGS) $< -o $@
 
-#to create/update .a file 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-
-#it will clean *.o
 clean:
 	rm -f $(OBJ)
 
-#it will clean *.o and *.a
-fclean: clean
-	rm -f $(NAME)
+re: clean all
 
-#it will clean *.o *.a and redo
-re: fclean all
-
-#it will still run even got file name *
-.PHONY: all clean fclean re
+.PHONY: all clean re

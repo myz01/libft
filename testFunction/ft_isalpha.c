@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/06 10:41:08 by omyzx             #+#    #+#             */
-/*   Updated: 2026/08/31 19:18:16 by muhabin3         ###   ########.fr       */
+/*   Created: 2026/07/27 16:39:55 by muhabin3          #+#    #+#             */
+/*   Updated: 2026/08/31 11:12:36 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+int	ft_isalpha(int c)
 {
-	
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }
 
+#include <stdio.h>
 int	main(void)
 {
+	int	result;
+	char	str;
 
+	str = '1';
+	result = ft_isalpha(str);
+	printf("%d", result);
 }
