@@ -5,6 +5,16 @@ Description
 Checking on character assign:-
 - ft_isalpha
 - ft_isdigit
+- ft_isalnum
+- ft_ascii
+- ft_isprint
+
+checking the length of character:-
+- ft_strlen
+
+To change the list of words to repepetive words:-
+- ft_memset
+- ft_bzero
 
 Instructions
 
