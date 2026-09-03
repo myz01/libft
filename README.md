@@ -20,6 +20,13 @@ to copy the source of memory to the destination:-
 - ft_memcpy
 - ft_memmove (incase of overlap)
 
+to count the length of the words copies/catenates:-
+- ft_strlcpy
+- ft_strlcat
+
+to change the words to uppercase or lowercase:-
+- ft_toupper
+- ft_tolower
 
 Instructions
 

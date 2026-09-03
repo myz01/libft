@@ -6,9 +6,11 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:43:03 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 19:00:36 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/03 23:42:06 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -17,7 +19,13 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-/*int	main(void)
+/*#include <ctype.h>
+int	main(void)
 {
-	printf("change char: %c", ft_tolower('a'));
+	// TEST CASE 1
+	char	alpha;
+
+	alpha = 'A';
+	printf("Original tolower [%c]: %c \n", alpha, tolower(alpha));
+	printf("Local ft_tolower [%c]: %c", alpha, ft_tolower(alpha));
 }*/
