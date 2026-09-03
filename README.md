@@ -16,6 +16,11 @@ To change the list of words to repepetive words:-
 - ft_memset
 - ft_bzero
 
+to copy the source of memory to the destination:-
+- ft_memcpy
+- ft_memmove (incase of overlap)
+
+
 Instructions
 
 Resources
