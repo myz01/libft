@@ -28,6 +28,9 @@ to change the words to uppercase or lowercase:-
 - ft_toupper
 - ft_tolower
 
+to search the first word letter and print the rest:-
+- ft_strchr
+
 Instructions
 
 Resources
