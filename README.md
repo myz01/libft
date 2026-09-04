@@ -30,6 +30,7 @@ to change the words to uppercase or lowercase:-
 
 to search the first word letter and print the rest:-
 - ft_strchr
+- ft_strrchr (reverse)
 
 Instructions
 

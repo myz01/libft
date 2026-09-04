@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 23:43:32 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/04 17:53:26 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/04 18:06:58 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(void)
 	const char	*string;
 
 	string = "Hi, who am i and you?";
+	printf("%ld", ft_strlen(string));
 	printf("%s\n", string);
 	printf("Original strchr:- %s\n", strchr(string, 'o'));
 	printf("Original strrchr:- %s\n", strrchr(string, 'o'));

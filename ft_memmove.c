@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 17:41:42 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/04 15:56:58 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/04 18:34:16 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,8 @@ int	main(void)
 	char		dest[10] = "libc";
 	int			i;
 
-	ft_memmove(dest + 2, src + 1, 5);
-	printf("%s\n", src);
-	printf("%s\n", dest);
+	ft_memmove(dest + 4, src + 3, 6);
+	printf("ft_mmemove	:- src [%s] dst [%s]\n", src, dest);
 
 	// TEST CASE 2 (int)
 	int	src1[4] = {200, 100, 300, 400};
