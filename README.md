@@ -32,10 +32,14 @@ to search the first word letter and print the rest:-
 - ft_strchr
 - ft_strrchr (reverse)
 
-to compare the word based on the bytes provide:-
+to compare the string based on the bytes provide:-
 - ft_strncmp
 
 to search the first word letter in a range and print the rest:-
+- ft_memchr
+
+to compare any type based on the bytes provide:-
+- ft_memcmp
 
 Instructions
 
