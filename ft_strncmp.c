@@ -6,29 +6,47 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 11:16:09 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 19:00:36 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/06 16:40:03 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
-	i = 0;
 	if (n == 0)
 		return (0);
-	n = n -1;
-	while (s2[i] && s1[i] == s2[i] && i < n)
-	{
-		printf("|%c-%c|", s1[i], s2[i]);
+	i = 0;
+	while (s2[i] && s1[i] == s2[i] && i < n - 1)
 		i++;
-	}
-		//i++;
 	return (s1[i] - s2[i]);
 }
 
+/*#include <string.h>
 int	main(void)
 {
-	printf("\n%d", ft_strncmp("ABCD", "ABCD", 3));
-}
+	const char	*A;
+	const char	*B;
+
+	A = "ABCEFG";
+	B = "ABCE1Z";
+
+	printf("A = %s || B = %s", A, B);
+
+	// TEST CASE 1 (0)
+	//add this in fx to see flow :- printf("|%c-%c|", s1[i], s2[i]);
+	printf("\nOriginal strncmp '0':- %d\n", strncmp(A, B, 0));
+	printf("Local ft_strncmp '0':- %d\n", ft_strncmp(A, B, 0));
+
+	// TEST CASE 2 (same)
+	printf("\nOriginal strncmp '4':- %d\n", strncmp(A, B, 4));
+	printf("Local ft_strncmp '4':- %d\n", ft_strncmp(A, B, 4));
+
+	// TEST CASE 3 (diff)
+	printf("\nOriginal strncmp '5':- %d\n", strncmp(A, B, 5));
+	printf("Local ft_strncmp '5':- %d\n", ft_strncmp(A, B, 5));
+	printf("Original strncmp '6':- %d\n", strncmp(A, B, 6));
+	printf("Local ft_strncmp '6':- %d\n", ft_strncmp(A, B, 6));
+}*/

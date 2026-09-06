@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 17:41:42 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/04 18:34:16 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/06 16:46:07 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 	return (dest);
 }
 
-#include <string.h>
+/*#include <string.h>
 int	main(void)
 {
 	// TEST CASE 1 (char)
@@ -76,4 +76,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/
