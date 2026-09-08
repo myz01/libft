@@ -6,11 +6,15 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:30:40 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 20:03:05 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:41:50 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	To do copy based on size then find the length
+	1. loop do strcpy
+	2. find length dst*/
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

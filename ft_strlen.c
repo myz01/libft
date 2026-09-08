@@ -6,11 +6,14 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 15:29:50 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 19:00:36 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:42:24 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	To find the length of str
+	1. loop of str */
 
 size_t	ft_strlen(const char *str)
 {

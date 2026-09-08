@@ -6,11 +6,13 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:20:16 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/08 11:50:57 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 00:52:37 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//	1. call ft_memset and replace with '\0'
 
 void	ft_bzero(void *s, size_t n)
 {

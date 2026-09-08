@@ -6,11 +6,13 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 15:02:35 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 19:00:36 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 00:57:39 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//	1. printable ASCII
 
 int	ft_isprint(int c)
 {

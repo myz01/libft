@@ -6,11 +6,16 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 11:16:09 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/08 00:59:24 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:43:59 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	To find the total of minus both byte compare
+	1. if condition to find 0
+	2. loop to get the index 
+	3. return with s1 minus s2 */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

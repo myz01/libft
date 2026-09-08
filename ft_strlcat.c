@@ -6,12 +6,17 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 19:20:51 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/03 23:25:30 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:40:37 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*	To find the length after cat both
+	1. len dst
+	2. loop of doing strcat
+	3. len dst again after cat */
+	
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;

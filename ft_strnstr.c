@@ -6,11 +6,16 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 11:47:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/08 01:28:30 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:48:15 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	To search a big string based on little string in it
+	1. loop pointer and len
+	2. inside loop to find the index of j
+	3. if condition meet '\0' */
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
