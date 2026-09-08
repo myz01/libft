@@ -41,6 +41,15 @@ to search the first word letter in a range and print the rest:-
 to compare any type based on the bytes provide:-
 - ft_memcmp
 
+to search the word inside the sentences and print the rest:-
+- ft_strnstr
+
+to change from ASCII to integer:-
+- ft_atoi
+
+to allocate memory (same as malloc) and the memory set to zero:-
+- ft_calloc
+
 Instructions
 
 Resources

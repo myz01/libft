@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:20:16 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/06 18:28:42 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/08 11:50:57 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
-	size_t	i;
-
-	ptr = (char *)s;
-	i = 0;
-	while (i < n)
-	{
-		ptr[i] = '\0';
-		i++;
-	}
+	ft_memset(s, '\0', n);
 }
 
 /*#include <string.h>
