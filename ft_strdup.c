@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 22:00:46 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:34:27 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 01:58:53 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strdup(const char *s)
 	return (buffer - s_len);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*original;
 	char	*duplicate;
@@ -54,6 +54,7 @@ int	main(void)
 
 	printf("Original String: '%s' (%ld)\n", original, o_len);
 	printf("Duplicate string: '%s' (%ld)\n", duplicate, d_len);
+	free(duplicate);
 
 	// TEST CASE 2
 	original = "";
@@ -63,6 +64,7 @@ int	main(void)
 
 	printf("Original String: '%s' (%ld)\n", original, o_len);
 	printf("Duplicate string: '%s' (%ld)\n", duplicate, d_len);
+	free(duplicate);
 
 	// TEST CASE 3
 	original = "123456789";
@@ -72,6 +74,7 @@ int	main(void)
 
 	printf("Original String: '%s' (%ld)\n", original, o_len);
 	printf("Duplicate string: '%s' (%ld)\n", duplicate, d_len);
+	free(duplicate);
 
     return(0);
-}
+}*/
