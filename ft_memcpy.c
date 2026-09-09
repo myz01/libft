@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 17:14:08 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:07:19 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 13:41:42 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t num)
 		ft_memmove(dest, src, num);
 	return (dest);
 }
-
-
 
 /*#include <string.h>
 int main(void)

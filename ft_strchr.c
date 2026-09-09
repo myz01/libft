@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:57:45 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:32:14 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 13:42:26 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (0);
 }
-
 
 /*#include <string.h>
 int main(void)

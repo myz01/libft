@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 17:41:42 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:25:59 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 13:42:06 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 
 	char_dest = (char *)dest;
 	char_src = (char *)src;
-
 	if (dest <= src)
 	{
 		while (num--)

@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 11:47:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:48:15 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 13:42:54 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,3 @@ int	main(void)
 	printf("Local ft_strnstr:- %s\n", ft_strnstr(lstr, "", 6));
     return (0);
 }*/
-
-
-
-
-
-
