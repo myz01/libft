@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 08:29:43 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:46:30 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/09 20:09:03 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t n, size_t size);
 char	*ft_strdup(const char *s);
+
+// PART 2 - Additional functions
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

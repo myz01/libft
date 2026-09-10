@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 11:47:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:42:54 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/10 11:51:32 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (little[0] == '\0')
+		return ((char *)big);
 	i = 0;
 	while (*big && i < len)
 	{
@@ -38,8 +40,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 /*#include <string.h>
 int	main(void)
 {
-	char	lstr[]  = "ABCDEF";
-	char	sstr[] = "DE";
+	char	*lstr  = "ABCDEF";
+	char	*sstr = "DE";
 
 	printf("Long String:-%s\nSmall String:-%s\n", lstr, sstr);
 
@@ -55,7 +57,14 @@ int	main(void)
 
 	// TEST CASE 3 (empty small string)
 	printf("\nempty string search\n");
-	printf("Original strstr:- %s\n", strstr(lstr, ""));
-	printf("Local ft_strnstr:- %s\n", ft_strnstr(lstr, "", 6));
+	printf("Long String:-%s\nSmall String:-%s\n", lstr, sstr = "");
+	printf("Original strstr:- %s\n", strstr(lstr, sstr));
+	printf("Local ft_strnstr:- %s\n", ft_strnstr(lstr, sstr, 4));
+
+	// TEST CASE 4 (empty both)
+	printf("\nempty both\n");
+	printf("Long String:-%s\nSmall String:-%s\n", lstr = "", sstr = "");
+	printf("Original strstr:- %s\n", strstr(lstr, sstr));
+	printf("Local ft_strnstr:- %s\n", ft_strnstr(lstr, sstr, 4));
     return (0);
 }*/
