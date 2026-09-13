@@ -2,6 +2,7 @@ This project has been created as part of the 42 curriculum by muhabin3
 
 Description
 
+Part 1 - Libc functions ----------------------------------------------
 Checking on character assign:-
 - ft_isalpha
 - ft_isdigit
@@ -49,6 +50,15 @@ to change from ASCII to integer:-
 
 to allocate memory (same as malloc) and the memory set to zero:-
 - ft_calloc
+----------------------------------------------------------------------
+
+Part 2 - Additional functions-----------------------------------------
+to allocate memory for substring then return substring from start[i] to len in string:-
+- ft_substr
+
+to trim string from beginning and last of index that same as set:-
+- ft_strtrim
+
 
 Instructions
 

@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 22:00:46 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:58:53 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/10 14:32:18 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strdup(const char *s)
 	char		*buffer;
 
 	s_len = ft_strlen(s);
-	buffer = (char *)malloc(sizeof(char) * s_len + 1);
+	buffer = malloc(sizeof(char) * s_len + 1);
 	if (buffer == NULL)
 		return (NULL);
 	while (*s)
