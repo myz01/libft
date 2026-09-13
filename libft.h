@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 08:29:43 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/10 19:37:01 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/13 19:26:06 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h> // for size_t 
 # include <stdlib.h> // for malloc and free
 # include <stdint.h> // for PTRDIFF_MAX
+# include <limits.h> // for limit
 
 //PART 1 - Libc functions
 int		ft_isalpha(int c);
@@ -44,6 +45,8 @@ char	*ft_strdup(const char *s);
 
 // PART 2 - Additional functions
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif

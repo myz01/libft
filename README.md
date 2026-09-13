@@ -56,8 +56,14 @@ Part 2 - Additional functions-----------------------------------------
 to allocate memory for substring then return substring from start[i] to len in string:-
 - ft_substr
 
+to allocate memory based on concatenating of string s1 and s2:-
+- ft_strjoin
+
 to trim string from beginning and last of index that same as set:-
 - ft_strtrim
+
+to split/trim each word from sentence into each token with remove deliminator:-
+- ft_split
 
 
 Instructions

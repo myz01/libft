@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 09:20:32 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 11:58:57 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/13 14:00:41 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,29 +75,29 @@ void	freeit(char **result, int i)
 	free(result);
 }
 
-char	**ft_split(char const *str, char delim)
+char	**ft_split(char const *s, char c)
 {
 	char	**result;
 	size_t	i;
 
 	i = 0;
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
-	result = malloc((word_count(str, delim) + 1) * sizeof(char *));
+	result = malloc((word_count(s, c) + 1) * sizeof(char *));
 	if (result == NULL)
 		return (NULL);
-	while (*str)
+	while (*s)
 	{
-		while (*str && *str == delim)
-			str++;
-		if (*str)
+		while (*s && *s == c)
+			s++;
+		if (*s)
 		{
-			result[i] = word_alloc(str, delim);
+			result[i] = word_alloc(s, c);
 			if (!result[i])
 				return (freeit(result, i - 1), NULL);
 			i++;
-			while (*str && *str != delim)
-				str++;
+			while (*s && *s != c)
+				s++;
 		}
 	}
 	result [i] = NULL;
