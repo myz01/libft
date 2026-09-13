@@ -6,11 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 14:02:19 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 19:40:00 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/13 21:33:10 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*	to change from integer to ASCII with allocate memory
+	1. create function length to check the length of integer
+	2. create function conversion to convert
+	3. malloc in conversion function
+	4. create function itoa to call every helper function
+	*/
 
 size_t	int_len(int n)
 {
@@ -63,7 +70,7 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	number;
 	char	*result;
@@ -72,19 +79,23 @@ int	main(void)
 	number = 28092001;
 	result = ft_itoa(number);
 	printf("\nThe integer:-	[%d]\nThe string:-	[%s]\n", number, result);
+	free(result);
 
 	// TEST CASE 2 (negative)
 	number = -28092001;
 	result = ft_itoa(number);
 	printf("\nThe integer:-	[%d]\nThe string:- 	[%s]\n", number, result);
+	free(result);
 
 	// TEST CASE 3 (exceed limit -)
 	number = INT_MIN;
 	result = ft_itoa(number);
 	printf("\nThe integer:-	[%d]\nThe string:-	[%s]\n", number, result);
+	free(result);
 
 	// TEST CASE 4 (exceed limit +)
 	number = INT_MAX;
 	result = ft_itoa(number);
 	printf("\nThe integer:-	[%d]\nThe string:-	[%s]\n", number, result);
-}
+	free(result);
+}*/
