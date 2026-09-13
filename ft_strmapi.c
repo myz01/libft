@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 19:46:31 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 22:02:19 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/13 22:25:15 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 
-char	fx_toupper(unsigned int n, char c)
+/*char	fx_toupper(unsigned int n, char c)
 {
 	(void)n;
 	if (c >= 'a' && c <= 'z')
@@ -50,7 +50,7 @@ char	fx_toupper(unsigned int n, char c)
 	return (c);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	*result;
 	char	*str;

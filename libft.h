@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 08:29:43 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 22:02:29 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/14 01:28:24 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h> // for malloc and free
 # include <stdint.h> // for PTRDIFF_MAX
 # include <limits.h> // for limit
+# include <unistd.h> // for File Descriptors
 
 //PART 1 - Libc functions
 int		ft_isalpha(int c);
@@ -50,5 +51,12 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 size_t	int_len(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+// File Descriptor
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

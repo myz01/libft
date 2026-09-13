@@ -65,6 +65,21 @@ to trim string from beginning and last of index that same as set:-
 to split/trim each word from sentence into each token with remove deliminator:-
 - ft_split
 
+to turn integer to ASCII using method allocate memory by malloc:-
+- ft_itoa
+
+to sweep from function to string thru one by one character:-
+- ft_strmapi
+
+to update the char changes one by one from same string:-
+- ft_striteri
+
+File Descriptor:-
+- ft_putchar_fd
+- ft_putstr_fd
+- ft_putendl_fd
+- ft_putnbr_fd
+
 
 Instructions
 
