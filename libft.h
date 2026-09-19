@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 08:29:43 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/14 01:28:24 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/19 19:46:29 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,44 +19,55 @@
 # include <limits.h> // for limit
 # include <unistd.h> // for File Descriptors
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
 //PART 1 - Libc functions
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *str);
-void	*ft_memset(void *s, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t num);
-void	*ft_memmove(void *dest, const void *src, size_t num);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-char	*ft_strchr(const char *str, int c);
-char	*ft_strrchr(const char *str, int c);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-int		ft_atoi(const char *nptr);
-void	*ft_calloc(size_t n, size_t size);
-char	*ft_strdup(const char *s);
+int				ft_isalpha(int c);
+int				ft_isdigit(int c);
+int				ft_isalnum(int c);
+int				ft_isascii(int c);
+int				ft_isprint(int c);
+size_t			ft_strlen(const char *str);
+void			*ft_memset(void *s, int c, size_t n);
+void			ft_bzero(void *s, size_t n);
+void			*ft_memcpy(void *dest, const void *src, size_t num);
+void			*ft_memmove(void *dest, const void *src, size_t num);
+size_t			ft_strlcpy(char *dst, const char *src, size_t size);
+size_t			ft_strlcat(char *dst, const char *src, size_t size);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
+char			*ft_strchr(const char *str, int c);
+char			*ft_strrchr(const char *str, int c);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
+void			*ft_memchr(const void *s, int c, size_t n);
+int				ft_memcmp(const void *s1, const void *s2, size_t n);
+char			*ft_strnstr(const char *big, const char *little, size_t len);
+int				ft_atoi(const char *nptr);
+void			*ft_calloc(size_t n, size_t size);
+char			*ft_strdup(const char *s);
 
 // PART 2 - Additional functions
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char const *s1, char const *set);
-char	**ft_split(char const *s, char c);
-size_t	int_len(int n);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strtrim(char const *s1, char const *set);
+char			**ft_split(char const *s, char c);
+size_t			int_len(int n);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 // File Descriptor
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
+
+// PART 3 - Linked List
+t_list			*ft_lstnew(void *content);
+void			ft_lstadd_front(t_list **lst, t_list *new);
+unsigned int	ft_lstsize(t_list *lst);
 
 #endif

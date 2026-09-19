@@ -79,7 +79,14 @@ File Descriptor:-
 - ft_putstr_fd
 - ft_putendl_fd
 - ft_putnbr_fd
+----------------------------------------------------------------------
 
+Part 3 - Linked list--------------------------------------------------
+to do first node include end with NULL:-
+- ft_lstnew
+
+to add at front on existing linked list without affect it:-
+- ft_lstadd_front
 
 Instructions
 
