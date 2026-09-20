@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 16:29:41 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/19 19:21:29 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/21 00:05:53 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,39 +28,40 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 /*int	main(void)
 {
-	t_list	*newnode;
-	t_list	*node;
-	t_list	*current;
+	t_list	*add;
+	t_list	*root;
+	t_list	*tmp;
 
-	node = ft_lstnew("A ");
-	node->next = ft_lstnew("B ");
-	node->next->next = ft_lstnew("C ");
-	current = node;
+	root = ft_lstnew("A ");
+	root->next = ft_lstnew("B ");
+	root->next->next = ft_lstnew("C ");
+	tmp = root;
 
 	printf("\nNormal linked list:- ");
-	while (current)
+	while (tmp)
 	{
-		printf((char *)current->content);
-		current = current->next;
+		printf((char *)tmp->content);
+		tmp = tmp->next;
 	}
 
 	// TEST CASE 1
 	printf("\nAdd front on Linked list:- ");
-	newnode = ft_lstnew("Z ");
-	ft_lstadd_front(&node, newnode);
-	current = node;
+	tmp = root;
+	add = ft_lstnew("Z ");
+	ft_lstadd_front(&tmp, add);
 
-	while (current)
+	while (tmp)
 	{
-		printf((char *)current->content);
-		current = current->next;
+		printf((char *)tmp->content);
+		tmp = tmp->next;
 	}
 
 	// freeing
-	while (node)
+	while (root)
 	{
-		current = node;
-		node = node->next;
-		free(current);
+		tmp = root;
+		root = root->next;
+		free(tmp);
 	}
+	free(add);
 }*/

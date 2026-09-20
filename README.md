@@ -88,6 +88,18 @@ to do first node include end with NULL:-
 to add at front on existing linked list without affect it:-
 - ft_lstadd_front
 
+to get size of linked list nodes used:-
+- ft_lstsize
+
+to get the last node before NULL of linked list:-
+- ft_lstlast
+
+to add at back on existing linked list without affect it:-
+- ft_lstadd_back
+
+to perform a delete node without affect previous and next node:-
+- ft_lstdelone
+
 Instructions
 
 Resources
