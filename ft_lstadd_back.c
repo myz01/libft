@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 14:41:27 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/20 18:41:22 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/21 12:47:52 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 /*	to add on back of linked list without affect the existing one
 	1. check whole list is NULL
 	2. check one of it if NULL then set current list with the new one
-	3. */
+	3. use ft_lstlast to get the last one
+	4. add new last one last->next */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

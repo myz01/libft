@@ -100,6 +100,12 @@ to add at back on existing linked list without affect it:-
 to perform a delete node without affect previous and next node:-
 - ft_lstdelone
 
+to perform a complete delete for every nodes in linked list:-
+- ft_lstclear
+
+to perform a specific function helper on every each of nodes in linked list:-
+- ft_lstiter
+
 Instructions
 
 Resources
