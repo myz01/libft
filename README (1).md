@@ -4,13 +4,13 @@
 
 ## 📌 Description
 
-**libft** is a personal C library built from scratch, recreating a set of standard `libc` functions plus custom utilities for string handling, memory management, and linked lists. It is the foundation library reused across almost every later 42 project (`ft_printf`, `push_swap`, `minishell`, etc.), so correctness and safety here (no leaks, no segfaults, no undefined behavior) matter beyond just this project.
+**libft** is a personal C library built from scratch, recreating a set of standard `libc` functions plus custom utilities for string handling, memory management, and linked lists. 
 
 The library is split into three parts:
 
-- **Part 1 — Libc replication**: reimplementations of standard C functions (`ctype.h`, `string.h`, `stdlib.h` subset) with identical behavior to their libc counterparts.
-- **Part 2 — Additional functions**: custom string/utility functions not in standard libc, useful for higher-level string manipulation (splitting, trimming, joining, converting).
-- **Part 3 — Linked list (bonus)**: a full singly linked list implementation (`t_list`) with creation, insertion, deletion, iteration, and mapping.
+- **Part 1 — Libc replication**: reimplementations of standard C functions of libc counterparts.
+- **Part 2 — Additional functions**: custom string/utility functions not in standard libc.
+- **Part 3 — Linked list**: a full singly linked list implementation.
 
 ---
 
@@ -19,26 +19,23 @@ The library is split into three parts:
 ### Compilation
 
 ```bash
-make            # builds libft.a (mandatory part only)
-make bonus      # builds libft.a including linked list functions
+make all        # builds libft.a (mandatory part only)
 make clean      # removes object files
 make fclean     # removes object files AND libft.a
 make re         # fclean + full rebuild
 ```
 
-> ⚠️ Verify these targets match your actual `Makefile`. Adjust if your rule names differ.
-
 ### Usage
 
 1. Include the header in your source file:
-   ```c
+   ```
    #include "libft.h"
    ```
 2. Compile and link against the compiled archive:
    ```bash
-   gcc your_program.c -L. -lft -o your_program
+   gcc [your_program].c -L. -lft -o [your_program]
    ```
-3. Make sure `libft.a` and `libft.h` are in the same directory as your project, or adjust `-L` / `-I` paths accordingly.
+3. Make sure `libft.a` and `libft.h` are in the same directory as your project.
 
 ---
 
@@ -46,62 +43,67 @@ make re         # fclean + full rebuild
 
 ### Part 1 — Libc Functions
 
-| Category | Functions |
+| Description | Functions |
 |---|---|
-| Character checks | `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint` |
-| String length | `ft_strlen` |
-| Memory fill | `ft_memset`, `ft_bzero` |
-| Memory copy | `ft_memcpy`, `ft_memmove` (handles overlap) |
-| Bounded copy/concat | `ft_strlcpy`, `ft_strlcat` |
-| Case conversion | `ft_toupper`, `ft_tolower` |
-| Character search | `ft_strchr`, `ft_strrchr` (reverse search) |
-| String compare | `ft_strncmp` |
-| Memory search | `ft_memchr` |
-| Memory compare | `ft_memcmp` |
-| Substring search | `ft_strnstr` |
-| String to integer | `ft_atoi` |
-| Zero-initialized allocation | `ft_calloc` |
+| Checking on character assign | `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_ascii`, `ft_isprint` |
+| checking the length of character | `ft_strlen` |
+| To change the list of words to repepetive words | `ft_memset`, `ft_bzero` |
+| to copy the source of memory to the destination | `ft_memcpy`, `ft_memmove` (incase of overlap) |
+| to count the length of the words copies/catenates | `ft_strlcpy`, `ft_strlcat` |
+| to change the words to uppercase or lowercase | `ft_toupper`, `ft_tolower` |
+| to search the first word letter and print the rest | `ft_strchr`, `ft_strrchr` (reverse) |
+| to compare the string based on the bytes provide | `ft_strncmp` |
+| to search the first word letter in a range and print the rest | `ft_memchr` |
+| to compare any type based on the bytes provide | `ft_memcmp` |
+| to search the word inside the sentences and print the rest | `ft_strnstr` |
+| to change from ASCII to integer | `ft_atoi` |
+| to allocate memory (same as malloc) and the memory set to zero | `ft_calloc` |
 
 ### Part 2 — Additional Functions
 
-| Category | Functions |
+| Description | Functions |
 |---|---|
-| Substring extraction | `ft_substr` — allocates and returns substring from index to length |
-| String concatenation | `ft_strjoin` — allocates and returns `s1` + `s2` |
-| Trimming | `ft_strtrim` — removes leading/trailing characters found in a given set |
-| Splitting | `ft_split` — tokenizes a string by delimiter into an array of strings |
-| Integer to string | `ft_itoa` — allocates and returns the string representation of an integer |
-| Mapping | `ft_strmapi` — applies a function to each character, returns a new string |
-| Iteration | `ft_striteri` — applies a function to each character, modifies in place |
-| File descriptor output | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` |
+| to allocate memory for substring then return substring from start[i] to len in string | `ft_substr` |
+| to allocate memory based on concatenating of string s1 and s2 | `ft_strjoin` |
+| to trim string from beginning and last of index that same as set | `ft_strtrim` |
+| to split/trim each word from sentence into each token with remove deliminator | `ft_split` |
+| to turn integer to ASCII using method allocate memory by malloc | `ft_itoa` |
+| to sweep from function to string thru one by one character | `ft_strmapi` |
+| to update the char changes one by one from same string | `ft_striteri` |
+| File Descriptor | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` |
 
 ### Part 3 — Linked List (Bonus)
 
-| Category | Functions |
+| Description | Functions |
 |---|---|
-| Node creation | `ft_lstnew` — creates a new node, next set to `NULL` |
-| Insertion | `ft_lstadd_front`, `ft_lstadd_back` |
-| Traversal/size | `ft_lstsize`, `ft_lstlast` |
-| Deletion | `ft_lstdelone` (single node), `ft_lstclear` (entire list) |
-| Iteration/mapping | `ft_lstiter` (apply function to each node), `ft_lstmap` (apply function, build new list) |
+| to do first node include end with NULL | `ft_lstnew` |
+| to add at front on existing linked list without affect it | `ft_lstadd_front` |
+| to get size of linked list nodes used | `ft_lstsize` |
+| to get the last node before NULL of linked list | `ft_lstlast` |
+| to add at back on existing linked list without affect it | `ft_lstadd_back` |
+| to perform a delete node without affect previous and next node | `ft_lstdelone` |
+| to perform a complete delete for every nodes in linked list | `ft_lstclear` |
+| to perform a specific function helper on every each of nodes in linked list | `ft_lstiter` |
+| to execute ft_lstiter on a new list that just created, will use del as ft_lstclear if needed | `ft_lstmap` |
+
 
 ---
 
 ## 📚 Resources
 
 - [C Standard Library Reference — cppreference](https://en.cppreference.com/w/c)
-- Linux man pages: `man strlen`, `man memcpy`, `man strchr`, etc. (`man <function_name>` in terminal)
-- [42 Norminette documentation](https://github.com/42School/norminette)
-- Beej's Guide to C Programming (general C reference)
+- [Linux man pages](https://linux.die.net/man/)
+- [Visual C programme](https://pythontutor.com/visualize.html#mode=display)
+- [GeeksforGeeks](https://www.geeksforgeeks.org)
+- [W3Schools](https://www.w3schools.com/c/)
+- [youtube](https://www.youtube.com/)
+
 
 ### AI usage disclosure
 
-> ⚠️ Replace this with what you actually did — do not leave placeholder text.
-
 AI (Claude) was used for:
-- [ ] Explaining the logic/algorithm behind specific functions (e.g. how `ft_split` should handle delimiters) without generating final code
-- [ ] Debugging segfaults / memory leaks by discussing `valgrind` output
-- [ ] Formatting and structuring this README
+- [/] Explaining the logic/algorithm/flow behind specific functions (e.g. how `ft_split` should handle delimiters) without generating final code
+- [/] Debugging segfaults / memory leaks by discussing `valgrind` output
 
 AI was **not** used for:
-- [ ] Writing the core function implementations (state clearly if true)
+- [/] Writing the core function implementations
