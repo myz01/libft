@@ -6,13 +6,15 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:43:03 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:44:12 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:11:03 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//	1. from uppercase to lowercase
+/*
+** 	1. from uppercase to lowercase 
+*/
 
 int	ft_tolower(int c)
 {

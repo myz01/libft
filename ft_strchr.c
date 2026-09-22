@@ -6,16 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:57:45 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 11:42:51 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:07:56 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to search based on char and print out the rest
-	1. loop pointer
-	2. if condition to printout
-	3. if condition to print all if '\0' */
+/*
+**	to search based on char and print out the rest
+**	1. loop pointer
+**	2. if condition to printout
+**	3. if condition to print all if '\0' 
+*/
 
 char	*ft_strchr(const char *str, int c)
 {

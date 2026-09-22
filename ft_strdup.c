@@ -6,19 +6,21 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 22:00:46 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/10 14:32:18 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:38:13 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	To allocate using malloc then copy exactly
-	1. find len
-	2. malloc the string
-	3. if condition if malloc NULL
-	4. copy string to pointer malloc
-	5. add '\0'
-	6. return pointer - len */
+/*
+**	To allocate using malloc then copy exactly
+**	1. find len
+**	2. malloc the string
+**	3. if condition if malloc NULL
+**	4. copy string to pointer malloc
+**	5. add '\0'
+**	6. return pointer - len 
+*/
 
 char	*ft_strdup(const char *s)
 {

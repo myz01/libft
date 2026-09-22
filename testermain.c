@@ -1,7 +1,8 @@
-#include "libft.h"
 
+#include "libft.h"
 #include <string.h>
-int main(void)
+
+int	main(void)
 {
 	// TEST CASE 1
 	char	*string;

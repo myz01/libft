@@ -6,15 +6,17 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 23:41:26 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:04:07 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:28:27 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	Compare each for 1st not identical
-	1. cast char for both
-	2. loop then if condition != return total minus */
+/*
+**	Compare each for 1st not identical
+**	1. cast char for both
+**	2. loop then if condition != return total minus 
+*/
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -34,7 +36,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/*#include <string.h>
+/* #include <string.h>
 int	main(void)
 {
 	// TEST CASE 1 (int)
@@ -54,4 +56,4 @@ int	main(void)
 	// TEST CASE 3 (empty)
 	printf("Original memcmp:- %d\n", memcmp(str1, str2, 0));
 	printf("Local ft_memcmp:- %d\n", ft_memcmp(str1, str2, 0));
-}*/
+} */

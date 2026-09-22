@@ -6,18 +6,20 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 18:52:44 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/11 09:39:41 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:52:57 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	To remove the beginning and the end of the string based on the set
-	1. create fx same_or_not that check char with string of set return 1
-	2. check NULL for both
-	3. loop to check start begin from where
-	4. loop to check end begin from where
-	5. do ft_substr on it to print the middle part */
+/*
+**	To remove the beginning and the end of the string based on the set
+**	1. create fx same_or_not that check char with string of set return 1
+**	2. check NULL for both
+**	3. loop to check start begin from where
+**	4. loop to check end begin from where
+**	5. do ft_substr on it to print the middle part 
+*/
 
 int	same_or_not(char c, char const *set)
 {

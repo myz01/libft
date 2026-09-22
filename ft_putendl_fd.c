@@ -6,18 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 00:36:54 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/14 01:26:26 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:20:13 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to make standard putendl that same as putstr + newlines able to read FD
-
-	File Descriptor		Name				<unistd.h>		<stdio.h>
-	0					Standard Input		STDIN_FILENO	stdin
-	1					Standard Output		STDOUT_FILENO	stdout
-	2					Standard Error		STDERR_FILENO	stderr
+/*
+**	to make standard putendl that same as putstr + newlines able to read FD
+**
+**	File Descriptor		Name				<unistd.h>		<stdio.h>
+**	0					Standard Input		STDIN_FILENO	stdin
+**	1					Standard Output		STDOUT_FILENO	stdout
+**	2					Standard Error		STDERR_FILENO	stderr
 */
 
 void	ft_putendl_fd(char *s, int fd)

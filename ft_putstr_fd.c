@@ -6,18 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 23:59:04 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/14 01:26:38 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:18:52 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to make standard putstr able to read FD
-
-	File Descriptor		Name				<unistd.h>		<stdio.h>
-	0					Standard Input		STDIN_FILENO	stdin
-	1					Standard Output		STDOUT_FILENO	stdout
-	2					Standard Error		STDERR_FILENO	stderr
+/*
+**	to make standard putstr able to read FD
+**
+**	File Descriptor		Name				<unistd.h>		<stdio.h>
+**	0					Standard Input		STDIN_FILENO	stdin
+**	1					Standard Output		STDOUT_FILENO	stdout
+**	2					Standard Error		STDERR_FILENO	stderr
 */
 
 void	ft_putstr_fd(char *s, int fd)

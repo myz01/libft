@@ -6,18 +6,20 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:20:38 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 00:32:20 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:26:57 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to do simple linked list which each 1 node and end with NULL
-	1. create new node as temp
-	2. malloc it to allocate based on t_list
-	3. check malloc NULL
-	4. insert 1st node with content
-	5. insert last node with NULL */
+/*
+**	to do simple linked list which each 1 node and end with NULL
+**	1. create new node as temp
+**	2. malloc it to allocate based on t_list
+**	3. check malloc NULL
+**	4. insert 1st node with content
+**	5. insert last node with NULL 
+*/
 
 t_list	*ft_lstnew(void *content)
 {

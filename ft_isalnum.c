@@ -6,13 +6,15 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 14:00:20 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:41:11 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 14:34:35 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// 1. alphabet and numeric
+/*
+**	1. alphabet and numeric 
+*/
 
 int	ft_isalnum(int c)
 {

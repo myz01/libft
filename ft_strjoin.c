@@ -6,19 +6,21 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 12:11:22 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/10 18:52:26 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:50:14 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to allocate memory and do concatenating s1 and s2
-	1. check if NULL s1 and s2
-	2. find len s1 and s2
-	3. malloc the size len of both and check NULL
-	4. memcpy as to copy s1
-	5. buffer + len of s1 to start concatenating
-	6. concatenating then result --s1&s2*/
+/*
+**	to allocate memory and do concatenating s1 and s2
+**	1. check if NULL s1 and s2
+**	2. find len s1 and s2
+**	3. malloc the size len of both and check NULL
+**	4. memcpy as to copy s1
+**	5. buffer + len of s1 to start concatenating
+**	6. concatenating then result --s1&s2
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

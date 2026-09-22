@@ -6,16 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 11:47:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 01:58:56 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:31:34 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	To search a big string based on little string in it
-	1. loop pointer and len
-	2. inside loop to find the index of j
-	3. if condition meet '\0' */
+/*
+**	To search a big string based on little string in it
+**	1. loop pointer and len
+**	2. inside loop to find the index of j
+**	3. if condition meet '\0' 
+*/
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -37,7 +39,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
-/*#include <string.h>
+/* #include <string.h>
 int	main(void)
 {
 	char	*lstr  = "ABCDEF";
@@ -67,4 +69,4 @@ int	main(void)
 	printf("Original strstr:- %s\n", strstr(lstr, sstr));
 	printf("Local ft_strnstr:- %s\n", ft_strnstr(lstr, sstr, 4));
     return (0);
-}*/
+} */

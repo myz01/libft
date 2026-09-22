@@ -6,16 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 10:41:08 by omyzx             #+#    #+#             */
-/*   Updated: 2026/09/13 11:59:39 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:33:20 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* 	1. Create whitespace checker
-	2. Check negative/positive sign
-	3. ASCII to integer
-	4. Negative sign if got one */
+/*
+**	to change from ASCII to integer
+** 	1. Create whitespace checker
+**	2. Check negative/positive sign
+**	3. ASCII to integer
+**	4. Negative sign if got one 
+*/
 
 int	whitespace(char c)
 {

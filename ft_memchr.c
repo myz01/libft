@@ -6,15 +6,17 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 18:28:51 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 11:38:37 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:25:15 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	Search for char thru String based on n limit
-	1. cast char s
-	2. loop then if condition to search */
+/*
+**	Search for char thru String until the limit of n
+**	1. cast char s
+**	2. loop then if condition to search 
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -32,7 +34,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 
-/*#include <string.h>
+/* #include <string.h>
 int	main(void)
 {
 	char	*str;
@@ -59,4 +61,4 @@ int	main(void)
 	printf("\nmismatched\n");
 	printf("Original memchr:- %s\n", (char *)memchr("", 'b', 20));
 	printf("Local ft_memchr:- %s\n", (char *)ft_memchr("", 'b', 20));
-}*/
+} */

@@ -6,15 +6,17 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 13:14:57 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/20 16:16:19 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:26:57 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to get the last node of linked list
-	1. do loop similar with list size
-	2. condition to break loop just put extra ahead instead of current */
+/*
+**	to get the last node of linked list
+**	1. do loop similar with list size
+**	2. condition to break loop just put extra ahead instead of current 
+*/
 
 t_list	*ft_lstlast(t_list *lst)
 {

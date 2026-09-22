@@ -6,18 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 14:02:19 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 02:57:56 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:58:03 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to change from integer to ASCII with allocate memory
-	1. create function length to check the length of integer
-	2. create function conversion to convert
-	3. malloc in conversion function
-	4. create function itoa to call every helper function
-	*/
+/*
+**	to change from integer to ASCII with allocate memory
+**	1. create function length to check the length of integer
+**	2. create function conversion to convert
+**	3. malloc in conversion function
+**	4. create function itoa to call every helper function
+*/
 
 size_t	int_len(long n)
 {

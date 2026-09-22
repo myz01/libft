@@ -6,18 +6,19 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 01:02:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 00:32:50 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:21:23 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to make standard putnbr able to read FD
-
-	File Descriptor		Name				<unistd.h>		<stdio.h>
-	0					Standard Input		STDIN_FILENO	stdin
-	1					Standard Output		STDOUT_FILENO	stdout
-	2					Standard Error		STDERR_FILENO	stderr
+/*
+**	to make standard putnbr able to read FD
+**
+**	File Descriptor		Name				<unistd.h>		<stdio.h>
+**	0					Standard Input		STDIN_FILENO	stdin
+**	1					Standard Output		STDOUT_FILENO	stdout
+**	2					Standard Error		STDERR_FILENO	stderr
 */
 
 void	ft_putnbr_fd(int n, int fd)

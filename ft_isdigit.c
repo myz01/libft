@@ -6,13 +6,15 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 13:42:43 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:04:22 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 14:33:40 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// 1. numeric digit
+/*
+**	1. numeric digit 
+*/
 
 int	ft_isdigit(int c)
 {

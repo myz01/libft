@@ -6,16 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 17:14:08 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:41:42 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 14:50:22 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	To copy the src to the dst
-	1. cast char both
-	2. if condition then loop dest = src
-	3. else call for ft_memmove */
+/*	
+**	To copy the src to the dst
+**	1. cast char both
+**	2. if condition then loop dest = src
+**	3. else call for ft_memmove 
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t num)
 {

@@ -6,16 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 16:29:41 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/21 00:05:53 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:26:57 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	To add infront of linked list
-	1. compare if it is NULL or not
-	2. fill new->next with previous node
-	3. simply put latest new to latest list to replace*/
+/*
+**	To add infront of linked list
+**	1. compare if it is NULL or not
+**	2. fill new->next with previous node
+**	3. simply put latest new to latest list to replace
+*/
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

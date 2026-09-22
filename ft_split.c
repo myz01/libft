@@ -6,23 +6,25 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 09:20:32 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 14:00:41 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:55:48 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to split each word in sentence with char deliminator
-	1. count every 'words' on sentence by use 3x while
-	2. create a function to allocate a 'word' then malloc memory of that 'word'
-	3. loop fx free for free the 'word' of the sentences then the sentences
-	4. create main fx ft_split 
-		4.1 check NULL on str
-		4.2 malloc on buffer with use fx count word then checck NULL
-		4.3 do while same as fx "count word"
-		4.4 allocate the word of each
-		4.5 check if the word not '\0' then call fx "free" for next word
-		4.6 loop for next word */
+/*
+**	to split each word in sentence with char as terminator
+**	1. count every 'words' on sentence by use 3x while
+**	2. create a function to allocate a 'word' then malloc memory of that 'word'
+**	3. loop fx free for free the 'word' of the sentences then the sentences
+**	4. create main fx ft_split 
+**		4.1 check NULL on str
+**		4.2 malloc on buffer with use fx count word then checck NULL
+**		4.3 do while same as fx "count word"
+**		4.4 allocate the word of each
+**		4.5 check if the word not '\0' then call fx "free" for next word
+**		4.6 loop for next word 
+*/
 
 int	word_count(char const *str, char delim)
 {

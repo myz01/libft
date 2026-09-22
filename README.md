@@ -45,7 +45,7 @@ make re         # fclean + full rebuild
 
 | Description | Functions |
 |---|---|
-| Checking on character assign | `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_ascii`, `ft_isprint` |
+| Checking on character assign | `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint` |
 | checking the length of character | `ft_strlen` |
 | To change the list of words to repepetive words | `ft_memset`, `ft_bzero` |
 | to copy the source of memory to the destination | `ft_memcpy`, `ft_memmove` (incase of overlap) |
@@ -58,6 +58,7 @@ make re         # fclean + full rebuild
 | to search the word inside the sentences and print the rest | `ft_strnstr` |
 | to change from ASCII to integer | `ft_atoi` |
 | to allocate memory (same as malloc) and the memory set to zero | `ft_calloc` |
+| to allocate memory and fill it with string | `ft_strdup` |
 
 ### Part 2 — Additional Functions
 

@@ -6,19 +6,21 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 19:46:31 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 22:25:15 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 16:07:19 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to applies any function of f to each of char in string s
-	1. check s either NULL
-	2. find the length of s
-	3. allocated a memory with malloc
-	4. loop between i < len
-		4.1 to fill in allocated memory with f function 
-	5. add '\0' at the end */
+/*
+**	to applies any function of f to each of char in string s
+**	1. check s either NULL
+**	2. find the length of s
+**	3. allocated a memory with malloc
+**	4. loop between i < len
+**		4.1 to fill in allocated memory with f function 
+**	5. add '\0' at the end 
+*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -42,12 +44,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 
-/*char	fx_toupper(unsigned int n, char c)
+/* char	fx_toupper(unsigned int n, char c)
 {
 	(void)n;
-	if (c >= 'a' && c <= 'z')
-		return (c - 'a' + 'A');
-	return (c);
+	return (ft_toupper(c));
 }
 
 int	main(void)
@@ -67,4 +67,4 @@ int	main(void)
 	printf("\nString:-	[%s]\nft_strmapi:-	[%s]\n", str, result);
 	free(result);
 	return (0);
-}*/
+} */

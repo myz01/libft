@@ -6,16 +6,18 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 23:43:32 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/22 12:12:16 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 15:11:01 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	to do strchr by search based on char and printout in reverse
-	1. if condition '\0'
-	2. to find the length
-	3. loop to do the reverse */
+/*
+**	to do strchr by search based on char and printout in reverse
+**	1. if condition '\0'
+**	2. to find the length
+**	3. loop to do the reverse 
+*/
 
 char	*ft_strrchr(const char *str, int c)
 {

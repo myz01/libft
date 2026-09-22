@@ -6,19 +6,21 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 17:41:42 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:42:06 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 14:48:10 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//check on "Operator Precedence and Associativity Table"
-/*	To move the src to the dst
-	1. cast char for both
-	2. if condition <= for loop dest = src ++
-	3. if condition > to add with num - 1 then loop dest = src --
-	4. return dest 
-	check for ovelapping by remove num - 1 and change -- to ++ */
+/*
+**	check on "Operator Precedence and Associativity Table"
+**	To move the src to the dst
+**	1. cast char for both
+**	2. if condition <= for loop dest = src ++
+**	3. if condition > to add with num - 1 then loop dest = src --
+**	4. return dest 
+**	check for ovelapping by remove num - 1 and change -- to ++ 
+*/
 
 void	*ft_memmove(void *dest, const void *src, size_t num)
 {
