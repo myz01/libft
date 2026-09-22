@@ -104,6 +104,7 @@ make re         # fclean + full rebuild
 AI (Claude) was used for:
 - [/] Explaining the logic/algorithm/flow behind specific functions (e.g. how `ft_split` should handle delimiters) without generating final code
 - [/] Debugging segfaults / memory leaks by discussing `valgrind` output
+- [/] To do a nice look decorative version of README for github
 
 AI was **not** used for:
 - [/] Writing the core function implementations
