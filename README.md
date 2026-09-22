@@ -97,7 +97,7 @@ make re         # fclean + full rebuild
 - [GeeksforGeeks](https://www.geeksforgeeks.org)
 - [W3Schools](https://www.w3schools.com/c/)
 - [youtube](https://www.youtube.com/)
-- `[Community and etc]`
+- *Community and etc*
 
 
 ### AI usage disclosure
