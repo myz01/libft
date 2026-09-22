@@ -96,16 +96,17 @@ make re         # fclean + full rebuild
 - [Visual C programme](https://pythontutor.com/visualize.html#mode=display)
 - [GeeksforGeeks](https://www.geeksforgeeks.org)
 - [W3Schools](https://www.w3schools.com/c/)
-- [youtube](https://www.youtube.com/)
+- [Youtube](https://www.youtube.com/)
 - *Community and etc*
 
 
 ### AI usage disclosure
 
 AI (Claude) was used for:
-- [/] Explaining the logic/algorithm/flow behind specific functions (e.g. how `ft_split` should handle delimiters) without generating final code
-- [/] Debugging segfaults / memory leaks by discussing `valgrind` output
-- [/] To do a nice look decorative version of README for github purpose only
+- [ ] Explaining the logic/algorithm/flow behind specific functions (e.g. how `ft_split` should handle delimiters) without generating final code
+- [ ] Debugging segfaults / memory leaks by discussing `valgrind` output
+- [ ] To do a nice look decorative version of README for github purpose only
 
 AI was **not** used for:
-- [/] Writing the core function implementations
+- [ ] Writing the core function implementations
+- [ ] Write down every details of README in terms of context and content
