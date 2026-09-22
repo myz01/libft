@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:20:38 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/17 16:15:00 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 00:32:20 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,3 @@ t_list	*ft_lstnew(void *content)
 	printf("\nString:- %s\n", str);
 	printf("NULL Node:- %s\n", (char *)node->content);
 }*/
-

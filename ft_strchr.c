@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 16:57:45 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:42:26 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 11:42:51 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,12 @@ char	*ft_strchr(const char *str, int c)
 {
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == (char)c)
 			return ((char *)str);
 		str++;
 	}
-	if (*str == '\0' && *str == c)
-	{
+	if (c == '\0')
 		return ((char *)str);
-	}
 	return (0);
 }
 

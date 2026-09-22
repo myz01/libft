@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 14:02:19 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/13 21:33:10 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 02:57:56 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@
 	4. create function itoa to call every helper function
 	*/
 
-size_t	int_len(int n)
+size_t	int_len(long n)
 {
 	size_t	len;
 
 	len = 0;
-	if (n < 0)
+	if (n <= 0)
 		len++;
 	while (n != 0)
 	{
@@ -34,40 +34,40 @@ size_t	int_len(int n)
 	return (len);
 }
 
-char	*conversion(size_t len, int n)
+char	*conversion(size_t len, long n)
 {
 	char	*buffer;
 	int		tmp;
 
-	buffer = ft_calloc(len, sizeof(char));
-	len = len - 1;
+	buffer = malloc(len + 1);
+	if (buffer == NULL)
+		return (NULL);
+	buffer[len] = '\0';
 	if (n < 0)
 	{
 		buffer[0] = '-';
 		n = n * -1;
 	}
-	buffer[len] = '\0';
-	while (n >= 10)
+	if (n == 0)
+		buffer[0] = '0';
+	while (n > 0)
 	{
 		len--;
 		tmp = n % 10;
 		buffer[len] = tmp + '0';
 		n = n / 10;
 	}
-	buffer[len - 1] = n + '0';
 	return (buffer);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*result;
+	long	num;
 	size_t	len;
 
-	if (n == INT_MIN)
-		n = INT_MIN + 1;
-	len = int_len(n) + 1;
-	result = conversion(len, n);
-	return (result);
+	num = n;
+	len = int_len(num);
+	return (conversion(len, num));
 }
 
 /*int	main(void)

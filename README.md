@@ -106,6 +106,9 @@ to perform a complete delete for every nodes in linked list:-
 to perform a specific function helper on every each of nodes in linked list:-
 - ft_lstiter
 
+to execute ft_lstiter on a new list that just created, will use del as ft_lstclear if needed:-
+- ft_lstmap
+
 Instructions
 
 Resources

@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 11:16:09 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 01:43:59 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 02:03:24 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,24 @@
 
 /*	To find the total of minus both byte compare
 	1. if condition to find 0
-	2. loop to get the index 
-	3. return with s1 minus s2 */
+	2. unsigned char s1 and s2
+	3. loop to get the index 
+	4. return with s1 minus s2 */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*a;
+	unsigned char	*b;
 
 	if (n == 0)
 		return (0);
+	a = (unsigned char *)s1;
+	b = (unsigned char *)s2;
 	i = 0;
-	while (s2[i] && s1[i] == s2[i] && i < n - 1)
+	while (b[i] && a[i] == b[i] && i < n - 1)
 		i++;
-	return (s1[i] - s2[i]);
+	return (a[i] - b[i]);
 }
 
 /*#include <string.h>

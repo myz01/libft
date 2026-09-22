@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 01:02:53 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/14 01:27:43 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 00:32:50 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int 	nbr;
 	char	input[16];
@@ -66,4 +66,4 @@ int	main(void)
 
 	ft_putstr_fd("\nYour number:- ", 1);
 	ft_putnbr_fd(nbr, 1);
-}
+}*/

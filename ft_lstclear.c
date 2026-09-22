@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 13:15:34 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/21 15:36:07 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 11:32:30 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*tmp;
 	t_list	*deltmp;
 
-	if (*lst == NULL || del == NULL)
+	if (lst == NULL || del == NULL)
 		return ;
 	tmp = *lst;
 	while (tmp)
 	{
 		deltmp = tmp;
 		tmp = tmp->next;
-		ft_lstdelone(deltmp, free);
+		ft_lstdelone(deltmp, del);
 	}
 	*lst = NULL;
 }

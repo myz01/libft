@@ -6,7 +6,7 @@
 /*   By: muhabin3 <muhabin3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/03 19:20:51 by muhabin3          #+#    #+#             */
-/*   Updated: 2026/09/09 13:40:40 by muhabin3         ###   ########.fr       */
+/*   Updated: 2026/09/22 01:31:45 by muhabin3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,34 @@
 	2. loop of doing strcat
 	3. len dst again after cat */
 
+/*	To find the length after cat both
+	1. len dst and src
+	2. if to check len dst not higher size
+		2.1 loop to compare of src with terminator and current len with size 
+		2.2 else len dst same as size
+	3. return plus len src and dst */
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	len;
+	size_t	len_src;
+	size_t	len_dst;
 
-	len = ft_strlen(dst);
+	len_dst = ft_strlen(dst);
+	len_src = ft_strlen(src);
 	i = 0;
-	while (i < size)
+	if (len_dst < size)
 	{
-		dst[i + len] = src[i];
-		i++;
+		while (src[i] && (len_dst + i) < (size - 1))
+		{
+			dst[len_dst + i] = src[i];
+			i++;
+		}
+		dst[len_dst + i] = '\0';
 	}
-	dst[len + i] = '\0';
-	len = ft_strlen(dst);
-	return (len);
+	else
+		len_dst = size;
+	return (len_dst + len_src);
 }
 
 /*int	main(void)
